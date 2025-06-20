@@ -1,0 +1,256 @@
+body{
+    font-family: math;
+    background-color: #fff;
+    margin: 0%;
+}
+
+*{
+    line-height: 1.5;
+}
+
+
+#home{
+    background-image:url(img-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-attachment: fixed;
+}
+
+#home > h1 {
+    color: #fff;   
+    font-weight: bolder; 
+    font-size: 24px;
+    text-align: center;
+}
+
+#home p {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+#home a {
+    text-decoration: none;
+    background-color: #f04e30;
+    padding: 10px;
+    border-radius: 5px;
+    color: white ;
+    font-weight: bolder;
+    margin-bottom: 5%;;
+    transition: 0.5s;
+    transition: ease-out  0.9s;
+    font-weight: bolder;   
+}
+
+#home a:hover {
+    background-color: white;
+    color: #f04e30;
+}
+
+.main-content{
+    padding: 30px;  
+    text-align: center;
+}
+
+.main-content > #about{
+    padding: 0% 10%;
+}
+
+.main-content > #about p{
+    line-height: 1.5;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+ 
+#services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    max-width: 1000px;
+    grid-gap: 40px;
+}
+
+.service{
+padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.service h4{
+    height: 42px;
+    color: #f04e30;
+}
+
+
+.image{
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 271px;
+    border-radius: 10px;
+    filter: brightness(70%);
+    max-height: 170px;
+}
+
+
+.sub-content{
+    display: block;
+    padding: 3% 10%;
+    justify-items: center;
+    text-align: center;
+}
+
+
+#testimony{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+    margin-bottom: 40px ;
+}
+
+.p-testimony{
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#testimony > .p-testimony > .name {
+    font-weight: bold;
+    font-style: italic;
+    color: #f04e30;
+}
+
+.contact-wrapper{
+    background-color: #fff;
+    width: 100wh;
+    height: fit-content;
+}
+
+#contact{
+    display: block;
+    justify-items: center;
+    height: 400px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: fit-content;
+    width: 85%;
+    align-items: center;
+}
+
+
+input, textarea, button {
+    width: 500px;
+    border: solid 1px  rgba(255, 255, 255, 0.548);
+    height: 50px;
+    border-radius:5px ;
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+button{
+    background: #f04e30;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button:hover{
+    color: #f04e30;
+    background: #fff;
+    transform: scale(1.05);
+}
+
+textarea{
+    padding-top: 10px;
+}
+
+footer{
+    background-color: #e4e3e3;
+    text-align: center;
+    margin: ;
+}
+
+.footer > .social-links a , i{
+    color: black;
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .services-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .service {
+        width: 90%;
+        margin: 20px 0  40px;
+        box-shadow: none;
+    }
+    
+    form input, form textarea {
+        width: 100%;  
+    }
+    
+    #home h1 {
+        font-size: 20px;
+    }
+    
+    #home p {
+        font-size: 14px;
+    }
+
+    input, textarea, button {
+        width: 85%;
+    }
+
+    button{
+        width: 105%;
+    }
+}
