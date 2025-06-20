@@ -41,4 +41,8 @@ header > .navigation-wrapper > .nav-link > a:hover {
     .navigation-wrapper{
         display: none;
     }
+
+    header{
+        justify-content: center;
+    }
 }
